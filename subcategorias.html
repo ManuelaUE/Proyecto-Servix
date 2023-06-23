@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home.html">
+                <img src="/assets/img/logo-text.png" alt="">
+            </a>
+          
+            <button class="navbar-toggler" type="button" onclick="openNavBar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servicios.html">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/perfil.html">Perfil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/perfil.html">Cerrar sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mb-3">
+        <div class="row d-flex flex-row justify-content-center align-items-center">
+
+            <div class="d-flex flex-wrap justify-content-start align-items-center">
+                <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 20%; font-size: 4vh;" onclick=" window.history.back()">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <h3 class="ali">Subcategorias</h3>
+            </div>
+
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+
+                <div id="obrasyreformasdehogar" style="display: none;">
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/constructor.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Albañil</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/cerrajero.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Cerrajero</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/pintor.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Pintor</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/plomero.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Plomero</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/martillo.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Reformas</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="redelectrica" style="display: none;">
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/electricidad.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Instalaciones electricas</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/iluminacion.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Iluminacion</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/caja-de-herramientas.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Arreglos electricos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="serviciostecnicos" style="display: none;">
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/apoyo-tecnico.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Reparaciones tecnicas</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/iluminacion.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Instalaciones tecnicas</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3" style="width: 12rem;" onclick="mostrarVendedores()">
+                        <img src="./assets/img/soporte-tecnico.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="d-flex align-content-center align-items-center justify-content-center">
+                                <h5 class="card-title mt-5 btn btn-info text-light">Tecnico general</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-bottom fixed-bottom">
+        <div class="container-fluid">
+            <div class="col d-flex flex-wrap justify-content-center align-content-center align-items-center">
+                <div class="items-submenu">
+                    <a href="/chat.html">
+                        <i class="fa-solid fa-comments"></i>
+                    </a>
+                </div>
+
+                <div class="items-submenu">
+                    <a href="">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </div>
+
+                <div class="items-submenu">
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-pencil"></i>
+                    </a>
+                </div>
+
+                <div class="items-submenu">
+                    <a href="">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/subcategorias.js"></script>
+</body>
+</html>
